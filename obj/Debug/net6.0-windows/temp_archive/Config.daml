@@ -1,0 +1,70 @@
+﻿<ArcGIS defaultAssembly="DistributionPlacement.dll" defaultNamespace="DistributionPlacement" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{ad0ee225-59e6-4ddc-ab40-15808a3b4ab0}" version="1.0" desktopVersion="3.0.36056">
+    <Name>DistributionPlacement</Name>
+    <Description>DistributionPlacement description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>veere</Author>
+    <Company>Acme</Company>
+    <Date>1/12/2023 9:40:09 AM</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="DistributionPlacement_Module" className="Module1" autoLoad="false" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <tab id="DistributionPlacement_Tab1" caption="Distribution">
+          <group refID="DistributionPlacement_Group1"/>
+        </tab>
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="DistributionPlacement_Group1" caption="Distribution Placement" appearsOnAddInTab="false">
+          <!-- host controls within groups -->
+          <!--<button refID="DistributionPlacement_DistributionElectricalStructure" size="large" />
+          <button refID="DistributionPlacement_DistributionTrenchSurveyPoint" size="large" />-->
+          <button refID="DistributionPlacement_DistributionElectricalStructureButton" size="large" />
+          <button refID="DistributionPlacement_DistributionTrenchSurveyPointButton" size="large" />
+          <button refID="DistributionPlacement_DistributionPolyline" size="large" />
+          <!--<button refID="DistributionPlacement_DistributionElectricalStructure" size="large" />
+          <button refID="DistributionPlacement_DistributionTrenchSurveyPoint" size="large" />-->
+          
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <!--<button id="DistributionPlacement_DistributionElectricalStructure" caption="DistributionElectricalStructure" className="DistributionElectricalStructure" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue32.png">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </button>
+        <button id="DistributionPlacement_DistributionTrenchSurveyPoint" caption="DistributionTrenchSurveyPoint" className="DistributionTrenchSurveyPoint" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue32.png">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </button>-->
+        <button id="DistributionPlacement_DistributionElectricalStructureButton" caption="Distribution Electrical Structure" className="DistributionElectricalStructureButton" loadOnClick="true" smallImage="Images\PlaceDistElectricStructure.png" largeImage="Images\PlaceDistElectricStructure.png">
+          <tooltip heading="Tool helps to place the electrical structure by providing X and Y coordinates">
+            Place Distribution Electrical Structure<disabledText />
+          
+          </tooltip>
+        </button>
+        <button id="DistributionPlacement_DistributionTrenchSurveyPointButton" caption="Distribution Survey Point" className="DistributionTrenchSurveyPointButton" loadOnClick="true" smallImage="Images\PlaceDistributionTrenchPoint.png" largeImage="Images\PlaceDistributionTrenchPoint.png">
+          <tooltip heading="Tool helps to place the trench points by providing X and Y coordinates">
+            Place Distribution Trench Survey Point<disabledText />
+          </tooltip>
+        </button>
+        <button id="DistributionPlacement_DistributionPolyline" caption="Distribution Survey line" className="DistributionPolyline" loadOnClick="true" smallImage="Images\ConstructDistSurveyLine.png" largeImage="Images\ConstructDistSurveyLine.png">
+          <tooltip heading="Tools helps to draw connecting line between the selected trench points or structures">
+            Construct Distribution Trench Line<disabledText />
+          </tooltip>
+        </button>
+        <!--<button id="DistributionPlacement_DistributionElectricalStructure" caption="DistributionElectricalStructure" className="ShowDistributionElectricalStructure" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple32.png">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </button>
+        <button id="DistributionPlacement_DistributionTrenchSurveyPoint" caption="DistributionTrenchSurveyPoint" className="ShowDistributionTrenchSurveyPoint" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple32.png">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </button>-->
+     
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>

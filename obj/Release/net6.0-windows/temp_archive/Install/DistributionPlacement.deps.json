@@ -1,0 +1,40 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0/win10-x64",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {},
+    ".NETCoreApp,Version=v6.0/win10-x64": {
+      "DistributionPlacement/1.0.0": {
+        "dependencies": {
+          "log4net": "2.0.15.0"
+        },
+        "runtime": {
+          "DistributionPlacement.dll": {}
+        }
+      },
+      "log4net/2.0.15.0": {
+        "runtime": {
+          "log4net.dll": {
+            "assemblyVersion": "2.0.15.0",
+            "fileVersion": "2.0.15.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DistributionPlacement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "log4net/2.0.15.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
