@@ -2,7 +2,7 @@
   "profiles": {
     "DistributionPlacement": {
       "commandName": "Executable",
-      "executablePath": "F:\\Program Files\\ArcGIS\\Pro\\bin\\ArcGISPro.exe"
+      "executablePath": "C:\\Users\\Dean\\AppData\\Local\\Programs\\ArcGIS\\Pro\\bin\\ArcGISPro.exe"
     }
   }
 }
